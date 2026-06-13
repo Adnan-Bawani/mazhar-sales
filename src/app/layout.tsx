@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import SmoothScrolling from "@/components/SmoothScrolling";
@@ -14,6 +14,14 @@ export const metadata: Metadata = {
   title: "Mazhar Decent Electricals | Premium Appliance Repair Since 1980",
   description: "Mumbai's Trusted Appliance Repair Experts Since 1980. We repair Gas Stoves, Washing Machines, Refrigerators, Microwaves, and more.",
 };
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 
 export default function RootLayout({
   children,

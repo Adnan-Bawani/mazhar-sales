@@ -69,12 +69,12 @@ export default function FloatingUI() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsModalOpen(true)}
-        className="fixed bottom-6 right-6 z-[90] flex items-center gap-2 px-4 py-3 rounded-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200 dark:border-slate-800 shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-primary dark:text-white transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:bg-white dark:hover:bg-slate-800 group"
+        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[90] flex items-center gap-2 px-3 py-2 md:px-4 md:py-3 rounded-full bg-white/70 dark:bg-slate-900/70 backdrop-blur-md border border-slate-200 dark:border-slate-800 shadow-[0_8px_30px_rgb(0,0,0,0.12)] text-primary dark:text-white transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.2)] hover:bg-white dark:hover:bg-slate-800 group"
       >
-        <div className="bg-primary/10 dark:bg-white/10 p-2 rounded-full group-hover:bg-primary group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-primary transition-colors">
-          <Contact size={20} />
+        <div className="bg-primary/10 dark:bg-white/10 p-1.5 md:p-2 rounded-full group-hover:bg-primary group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-primary transition-colors">
+          <Contact className="w-4 h-4 md:w-5 md:h-5" />
         </div>
-        <span className="font-bold font-cabinet tracking-wide pr-2">Shop Card</span>
+        <span className="font-bold font-cabinet tracking-wide pr-1 md:pr-2 text-sm md:text-base">Shop Card</span>
       </motion.button>
 
       {/* Shop Card Modal */}

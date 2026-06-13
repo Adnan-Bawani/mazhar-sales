@@ -5,18 +5,47 @@ import MediaShowcase from "@/components/ui/MediaShowcase";
 import Watermark from "@/components/ui/Watermark";
 
 const APPLIANCES = [
+  // Row 1
+  {
+    id: "gas-stove",
+    name: "Gas Stove Repair",
+    desc: "Complete servicing, flame adjustment, and pipe leakage detection for all leading kitchen stove brands.",
+    image: "/images/appliances/gas-stove.jpg",
+  },
+  {
+    id: "mixer-grinder",
+    name: "Mixer & Grinder Repairs",
+    desc: "Motor rewinding, blade sharpening, and switch repairs for your essential heavy-duty grinders.",
+    image: "/images/appliances/mixer-grinder.jpg",
+  },
   {
     id: "pressure-cooker",
-    name: "Pressure Cooker",
+    name: "Pressure Cooker Repair",
     desc: "Valve replacement, gasket fitting, and handle repairs to ensure complete kitchen safety.",
     image: "/images/appliances/pressure-cooker.jpg",
   },
+
+  // Row 2
   {
-    id: "ceiling-fan",
-    name: "Ceiling Fan Servicing",
-    desc: "Winding repairs, capacitor changes, and bearing greasing for silent, high-speed performance.",
-    image: "/images/appliances/ceiling-fan.jpg",
+    id: "oven",
+    name: "Oven Repair",
+    desc: "Thermostat calibration, door seal replacement, and heating element fixes for built-in and electric ovens.",
+    image: "/images/appliances/oven.jpg",
   },
+  {
+    id: "blender",
+    name: "Blender Repair",
+    desc: "Coupler replacement, jar leakage fixes, and motor servicing for smooth, daily blending.",
+    image: "/images/appliances/blender.jpg",
+  },
+  {
+    id: "toaster",
+    name: "Toaster Repair",
+    desc: "Heating coil replacement and pop-up mechanism servicing for perfectly toasted mornings.",
+    image: "/images/appliances/toaster.jpg",
+  },
+
+  // Row 3
   {
     id: "geyser",
     name: "Geyser & Water Heater",
@@ -24,10 +53,24 @@ const APPLIANCES = [
     image: "/images/appliances/geyser.jpg",
   },
   {
-    id: "gas-stove",
-    name: "Gas Stove Repair",
-    desc: "Complete servicing, flame adjustment, and pipe leakage detection for all leading kitchen stove brands.",
-    image: "/images/appliances/gas-stove.jpg",
+    id: "electric-iron",
+    name: "Electric Iron Repair",
+    desc: "Thermostat fixes, wire changes, and steam plate cleaning to ensure your clothes always look sharp.",
+    image: "/images/appliances/electric-iron.jpg",
+  },
+  {
+    id: "microwave",
+    name: "Microwave Repair",
+    desc: "Magnetron replacement, panel fixes, and heating element repairs for premium standalone ovens.",
+    image: "/images/appliances/microwave.jpg",
+  },
+
+  // Row 4
+  {
+    id: "ceiling-fan",
+    name: "Ceiling Fan Servicing",
+    desc: "Winding repairs, capacitor changes, and bearing greasing for silent, high-speed performance.",
+    image: "/images/appliances/ceiling-fan.jpg",
   },
   {
     id: "washing-machine",
@@ -40,42 +83,6 @@ const APPLIANCES = [
     name: "Refrigerator & Cooling",
     desc: "Advanced cooling diagnostics, gas refilling, and compressor replacement to keep your food fresh.",
     image: "/images/appliances/refrigerator.jpg",
-  },
-  {
-    id: "microwave",
-    name: "Microwave Repair",
-    desc: "Magnetron replacement, panel fixes, and heating element repairs for premium standalone ovens.",
-    image: "/images/appliances/microwave.jpg",
-  },
-  {
-    id: "oven",
-    name: "Oven Repair",
-    desc: "Thermostat calibration, door seal replacement, and heating element fixes for built-in and electric ovens.",
-    image: "/images/appliances/oven.jpg",
-  },
-  {
-    id: "mixer-grinder",
-    name: "Mixer & Grinder",
-    desc: "Motor rewinding, blade sharpening, and switch repairs for your essential heavy-duty grinders.",
-    image: "/images/appliances/mixer-grinder.jpg",
-  },
-  {
-    id: "blender",
-    name: "Blender Repair",
-    desc: "Coupler replacement, jar leakage fixes, and motor servicing for smooth, daily blending.",
-    image: "/images/appliances/blender.jpg",
-  },
-  {
-    id: "electric-iron",
-    name: "Electric Iron",
-    desc: "Thermostat fixes, wire changes, and steam plate cleaning to ensure your clothes always look sharp.",
-    image: "/images/appliances/electric-iron.jpg",
-  },
-  {
-    id: "toaster",
-    name: "Toaster Repair",
-    desc: "Heating coil replacement and pop-up mechanism servicing for perfectly toasted mornings.",
-    image: "/images/appliances/toaster.jpg",
   },
 ];
 

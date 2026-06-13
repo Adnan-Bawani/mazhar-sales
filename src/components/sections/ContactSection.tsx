@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle, MapPin, Clock, Phone } from "lucide-react";
+import { MessageCircle, MapPin, Clock, Phone, ChevronUp } from "lucide-react";
 import Watermark from "@/components/ui/Watermark";
 
 export default function ContactSection() {
@@ -93,10 +93,31 @@ export default function ContactSection() {
         </div>
         
         {/* Footer Bottom */}
-        <div className="text-center pt-8 border-t border-slate-200 dark:border-slate-800">
-          <p className="text-muted-foreground font-medium text-sm">
+        <div className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-slate-200 dark:border-slate-800 gap-6">
+          <p className="text-muted-foreground font-medium text-sm text-center md:text-left">
             © {new Date().getFullYear()} Decent Electricals. All rights reserved.
           </p>
+
+          {/* Scroll Up Indicator */}
+          <motion.div 
+            className="flex items-center gap-3 cursor-pointer group pointer-events-auto"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+          >
+            <span className="text-sm font-bold text-slate-500 dark:text-slate-400 group-hover:text-primary dark:group-hover:text-white transition-colors uppercase tracking-widest">Back to Top</span>
+            <motion.div
+              animate={{ y: [0, -6, 0] }}
+              transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+              className="w-10 h-10 rounded-full bg-primary/10 dark:bg-slate-800 text-primary dark:text-white flex items-center justify-center border border-primary/20 dark:border-slate-700 shadow-sm group-hover:bg-primary group-hover:text-white dark:group-hover:bg-white dark:group-hover:text-primary transition-all"
+            >
+              <ChevronUp size={20} />
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </footer>
